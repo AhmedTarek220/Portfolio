@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "Roboto", serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary:#000;
+    --secondary:rgb(24 24 27);
+    --border:rgb(63, 63, 70, 0.4);
+    --blue:rgb(93,188,252);
+    --title:rgb(244,244,245);
+    --subtitle:rgb(161,161,170);
+    --icon-hover:#d4d4d8;
+    --bgheader:rgb(39,39,42)
+}
+.light{
+    --primary:#fff;
+    --secondary:rgb(255, 255, 255);
+    --border:rgb(202, 202, 202, 0.518);
+    --blue:rgb(000,000,000);
+    --title:rgb(39,39,42);
+    --subtitle:rgb(82,82,91);
+    --icon-hover:#333;
+    --bgheader:rgb(253,253,253)
+
+}
+body{
+    background-color: var(--primary);
+    color: #fff;
+}
+section{
+
+    margin: 0 10px;
+
+}
+.flex{
+    display: flex;
+}
+.portfolio{
+    width: 90%;
+    margin: auto;
+    background-color: var(--secondary);
+}
+.border{
+    border-bottom: 4px solid var(--border);
+    margin: 3rem 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+button:active{
+    scale: 0.7;
+}
+button:disabled{
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+@media (max-width:600px) {
+    .container{
+        width: 98%;
+        padding: 0 1.5rem;
+    }
+    
+}
+::-webkit-scrollbar{
+    width: 0.8rem;
+}
+::-webkit-scrollbar-track{
+    border: 7px solid #292c3b;
+    border-radius: 5px;
+    box-shadow: inset 0 0 2.5px 2px rgba(0 , 0, 0,0.5);
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: #888;
+    border-radius: 2px;
+
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #555;
+
+}
+.arrow{
+    all: unset;
+    width: 2.6rem;
+    background-color: rgba(25, 118, 210, 0.85);
+    height: 2.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 2rem;
+    right: 1%;
+    position: fixed;
+    cursor: pointer;
+    border: 1px solid#fff;
+}
+
+.arrow:hover{
+    background-color: rgba(25, 118, 210);
+}
+@media (max-width:600px) {
+    .arrow{
+        opacity: 0.5;
+        width: 2.2rem;
+        height: 2.2rem;
+        right: 10%;
+    }
+    
+}

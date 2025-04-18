@@ -1,0 +1,125 @@
+main.flex {
+    gap: 2rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Card Styling */
+.card {
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+    padding: 2px;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    border-color: var(--blue);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/* Left Section */
+main section.left-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+@media (max-width:600px){
+
+}
+
+main section.left-sec button {
+    width: 10rem;
+    padding: 0.8rem 0;
+    background: rgba(36, 37, 46, 1);
+    color: white;
+    font-size: 16px;
+    opacity: 0.6;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out, transform 0.2s;
+}
+
+main section.left-sec button.active{
+    opacity: 1;
+    font-weight: bold;
+    border: 1px solid var(--blue);
+    transform: translateY(-2px);
+}
+
+/* Right Section */
+main section.right-sec {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+/* Card Image */
+main section.right-sec .card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Card Content */
+main section.right-sec .card .box {
+    padding: 0.8rem;
+}
+
+main section.right-sec .card .box .title {
+    color: var(--title);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+main section.right-sec .card .box .subtitle {
+    color: var(--subtitle);
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Links and Icons */
+main section.right-sec .card .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .icons a i {
+    font-size: 1.3rem;
+    color: var(--subtitle);
+    margin-right: 8px;
+    transition: color 0.3s;
+}
+
+.card .icons a i:hover {
+    color: var(--blue);
+}
+
+.card .links .more {
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    font-size: 0.9rem;
+    gap: 5px;
+}
+@media (max-width:768px) {
+    main.flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    main section.left-sec{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+}

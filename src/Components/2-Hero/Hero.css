@@ -1,0 +1,72 @@
+section.container{
+    display: flex;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    background-color: var(--secondary);
+
+}
+@media (max-width:700px) {
+    section.container{
+        flex-direction: column;
+        width: 80%;
+
+    }
+    .right-section.animation{
+        display: none;
+    }
+    
+}
+section.container .left-section{
+    flex-grow: 1;;
+}
+section.container .avatar{
+    display: flex;
+    align-items: flex-end;
+}
+section.container .avatar img{
+    width: 200px;
+    border: 1px solid orangered;
+    padding: 4px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 40px gray inset;
+
+}
+section.container .avatar i{
+    color: var(--blue);
+    font-size: 1.2rem;
+}
+
+section.container .text h1{
+    font-size: 2.5rem;
+    margin: 24px 0;
+    color: var(--title);
+}
+section.container .text p{
+    color: var(--subtitle);
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+section.container .icons h4{
+    color: var(--subtitle);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+section.container .icons i{
+    margin: 0 10px;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--subtitle);
+    transition: 0.5s scale;
+}
+
+section.container .icons i:hover{
+    scale: 1.5;
+    color: var(--icon-hover);
+}
+.right-section.animation{
+    width: 100%;
+    translate: 100px 55px;
+}
