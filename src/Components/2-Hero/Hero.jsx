@@ -35,7 +35,7 @@ function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
           >
-            I'am A<span style={{ color: "var(--blue)" }}>{text}</span>
+            I'am A <br /><span style={{ color: "var(--blue)" }}>{text}</span>
             <span style={{fontSize:'50px'}}><Cursor /></span>
           </motion.h1>
           <p>
