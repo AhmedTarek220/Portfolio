@@ -84,7 +84,7 @@ function Contact() {
           </button>
 
           {state.succeeded && formSubmitted && (
-            <h2 className='flex message' style={{ marginTop: '1.5rem', alignItems: 'center' }}>
+            <h2 className='flex data' style={{ marginTop: '1.5rem', alignItems: 'center', justifyContent: 'center' }}>
               <Lottie animationData={sendDone} loop={false} style={{ height: 70, color: 'green' }} />
               Your message has been sent successfully
             </h2>
