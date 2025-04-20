@@ -25,7 +25,7 @@ function Main() {
       : projects.filter((project) => project.category.toLowerCase() === categories[active].toLowerCase());
 
   return (
-    <main className="flex">
+    <main className="flex" id="Projects">
       <section className="left-sec flex">
         {categories.map((category, index) => (
           <button

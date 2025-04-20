@@ -13,7 +13,7 @@ function Hero() {
     delaySpeed: 2500,
   });
   return (
-    <section className="container">
+    <section className="container" id="About">
       <div className="left-section">
         <div className="avatar">
           <motion.img
