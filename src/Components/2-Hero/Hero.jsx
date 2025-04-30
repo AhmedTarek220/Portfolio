@@ -53,7 +53,7 @@ function Hero() {
           <a href="https://www.instagram.com/ahmmedtarekk2/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-instagram"></i>
           </a>
-          <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/201123438598" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-whatsapp"></i>
           </a>
           <a href="https://www.linkedin.com/in/ahmed-tarek-3ab182256/"target="_blank" rel="noopener noreferrer" >
